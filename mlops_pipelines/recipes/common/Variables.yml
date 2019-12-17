@@ -10,7 +10,7 @@ variables:
   ACR: '${{ variables.BASE_NAME }}acr'
 
   #Configuration information
-  AML_COMPUTE_SKU: 'STANDARD_DS4_V2'
+  AML_COMPUTE_SKU: 'STANDARD_DS1_V2'
   AML_COMPUTE_CLUSTER: 'amlcluster'
   AKS_CLUSTER: '${{ variables.BASE_NAME }}-aks'
   LOCATION: 'eastus2'
