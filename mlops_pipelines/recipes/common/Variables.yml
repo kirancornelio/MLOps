@@ -1,15 +1,12 @@
 variables:
   #IMPORTANT: Update BASE_NAME with your GLOBALLY unique name. Rules: No underscore, max 10 chars & all lower case
-  BASE_NAME: 'Kiran-1'
-  BASE_NAMERG:'Kiran-ML-1'
-  BASE_NAMEST: 'kiran17067022083'
-  BASE_NAMEIN: 'kiran10344232216'
+  BASE_NAME: 'Kiran-121'
   #If you want to use an existing workspace, change all the below values according to current setup
   WORKSPACE: '${{ variables.BASE_NAME }}-ws'
-  RESOURCE_GROUP: '${{ variables.BASE_NAMERG }}'
-  STORAGE_ACCOUNT: '${{ variables.BASE_NAMEST }}'
+  RESOURCE_GROUP: '${{ variables.BASE_NAME }}-rg'
+  STORAGE_ACCOUNT: '${{ variables.BASE_NAME }}sa'
   KEY_VAULT: '${{ variables.BASE_NAME }}kv'
-  APP_INSIGHTS: '${{ variables.BASE_NAMEIN }}'
+  APP_INSIGHTS: '${{ variables.BASE_NAME }}'
   ACR: '${{ variables.BASE_NAME }}acr'
 
   #Configuration information
